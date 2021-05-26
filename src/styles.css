@@ -1,0 +1,53 @@
+html,body, #root {
+    height: 100%;
+    margin: 0px;
+    font-family: "Lato";
+    font-size: larger;
+}
+
+.gridContainer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1.8fr 0.6fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header header"
+      "leftBox formContainer formContainer rightBox"
+      "footer footer footer footer";
+}
+
+.header, .formContainer, .leftBox, .rightBox, .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.formContainer { 
+    grid-area: formContainer; 
+    background-color: #98DAF5;  
+}
+  
+.header { 
+    grid-area: header; 
+    background-color: #EEF8FC 
+}
+  
+.footer { 
+    grid-area: footer; 
+    background-color: #F6DDB1;
+}
+  
+.leftBox { 
+    grid-area: leftBox; 
+    background-color: #D2DD26;
+}
+  
+.rightBox { 
+    grid-area: rightBox; 
+    background-color: #1D9547;
+}
+
+  
+
+  
