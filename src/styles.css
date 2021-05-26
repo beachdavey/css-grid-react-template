@@ -2,7 +2,7 @@ html,body, #root {
     height: 100%;
     margin: 0px;
     font-family: "Lato";
-    font-size: larger;
+    font-size: large;
 }
 
 .gridContainer {
